@@ -58,13 +58,7 @@ export const InfoModal = ({ isOpen, handleClose }: Props) => {
       </p>
 
       <p className="mt-6 text-sm italic text-gray-500 dark:text-gray-300">
-        Developed By Jordan Feldstein -{' '}
-        <a
-          href="https://roslynocc.com"
-          className="font-bold underline"
-        >
-          Roslyn High School OCC
-        </a>{' '}
+        Developed By Jordan Feldstein {' '}
       </p>
     </BaseModal>
   )
