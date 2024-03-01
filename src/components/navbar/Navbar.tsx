@@ -26,4 +26,34 @@ export const Navbar = ({
       <div className="navbar-content px-5 short:h-auto">
         <div className="flex">
           <InformationCircleIcon
-            className="h-6 w-6 c
+            className="h-6 w-6 cursor-pointer dark:stroke-white"
+            onClick={() => setIsInfoModalOpen(true)}
+          />
+          {ENABLE_ARCHIVED_GAMES && (
+            <CalendarIcon
+              className="ml-3 h-6 w-6 cursor-pointer dark:stroke-white"
+              onClick={() => setIsDatePickerModalOpen(true)}
+            />
+          )}
+        </div>
+        {/* Displaying the image instead of text title */}
+        <img
+          src="https://i.ibb.co/CwFqWyX/Clashdle-Logo.png"
+          alt="Game Logo"
+          className="h-10 w-10 mx-auto"
+        />
+        <div className="right-icons">
+          <ChartBarIcon
+            className="mr-3 h-6 w-6 cursor-pointer dark:stroke-white"
+            onClick={() => setIsStatsModalOpen(true)}
+          />
+          <CogIcon
+            className="h-6 w-6 cursor-pointer dark:stroke-white"
+            onClick={() => setIsSettingsModalOpen(true)}
+          />
+        </div>
+      </div>
+      <hr></hr>
+    </div>
+  );
+};
