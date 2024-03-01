@@ -3,17 +3,17 @@ import {
   ChartBarIcon,
   CogIcon,
   InformationCircleIcon,
-} from '@heroicons/react/outline';
+} from '@heroicons/react/outline'
 
-import { ENABLE_ARCHIVED_GAMES } from '../../constants/settings';
-import { GAME_TITLE } from '../../constants/strings';
+import { ENABLE_ARCHIVED_GAMES } from '../../constants/settings'
+import { GAME_TITLE } from '../../constants/strings'
 
 type Props = {
-  setIsInfoModalOpen: (value: boolean) => void;
-  setIsStatsModalOpen: (value: boolean) => void;
-  setIsDatePickerModalOpen: (value: boolean) => void;
-  setIsSettingsModalOpen: (value: boolean) => void;
-};
+  setIsInfoModalOpen: (value: boolean) => void
+  setIsStatsModalOpen: (value: boolean) => void
+  setIsDatePickerModalOpen: (value: boolean) => void
+  setIsSettingsModalOpen: (value: boolean) => void
+}
 
 export const Navbar = ({
   setIsInfoModalOpen,
@@ -36,12 +36,7 @@ export const Navbar = ({
             />
           )}
         </div>
-        {/* Displaying the image instead of text title */}
-        <img
-          src="https://i.ibb.co/CwFqWyX/Clashdle-Logo.png"
-          alt="Game Logo"
-          className="h-100 w-100 mx-auto"
-        />
+        <p className="text-xl font-bold dark:text-white">{GAME TITLE} </p>
         <div className="right-icons">
           <ChartBarIcon
             className="mr-3 h-6 w-6 cursor-pointer dark:stroke-white"
@@ -55,5 +50,5 @@ export const Navbar = ({
       </div>
       <hr></hr>
     </div>
-  );
-};
+  )
+}
