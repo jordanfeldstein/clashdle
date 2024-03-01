@@ -40,7 +40,7 @@ export const Navbar = ({
         <img
           src="https://i.ibb.co/CwFqWyX/Clashdle-Logo.png"
           alt="Game Logo"
-          className="h-10 w-10 mx-auto"
+          className="h-100 w-100 mx-auto"
         />
         <div className="right-icons">
           <ChartBarIcon
