@@ -36,7 +36,7 @@ export const Navbar = ({
             />
           )}
         </div>
-        <p className="text-xl font-bold dark:text-white">{GAME_TITLE}</p>
+        <p className="text-xl font-bold dark:text-white"><a href="https://ibb.co/QJGZXVq"><img src="https://i.ibb.co/CwFqWyX/Clashdle-Logo.png" alt="Clashdle-Logo" border="0"></a></p>
         <div className="right-icons">
           <ChartBarIcon
             className="mr-3 h-6 w-6 cursor-pointer dark:stroke-white"
