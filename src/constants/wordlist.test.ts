@@ -2,13 +2,13 @@ import { fail } from 'assert'
 
 import { WORDS } from './wordlist'
 
-    expect(WORDS.length).toEqual(uniqueWords.length)
-
 // You may not want the list of solutions to be unique. In that case, disable this test
 describe('wordlist', () => {
   test('words are unique', () => {
-      
     const uniqueWords = Array.from(new Set(WORDS))
+
+    expect(WORDS.length).toEqual(uniqueWords.length)
+
     if (uniqueWords.length !== WORDS.length) {
       uniqueWords.forEach((w) => {
         const ww = WORDS.filter((x) => x === w)
