@@ -1,7 +1,7 @@
 export const WORDS = [
   'clash',
   'cheer',
-  'dogs',
+  'dawgs',
   'pride',
   'rally',
 ]
