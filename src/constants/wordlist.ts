@@ -1,5 +1,5 @@
 export const WORDS = [
-  'pride',
+  'rodeo',
   'cheer',
   'rally',
   'clash',
